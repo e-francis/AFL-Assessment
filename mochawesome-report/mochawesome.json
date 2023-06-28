@@ -5,9 +5,9 @@
     "passes": 8,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-28T12:28:18.654Z",
-    "end": "2023-06-28T12:28:18.687Z",
-    "duration": 33,
+    "start": "2023-06-28T13:54:51.845Z",
+    "end": "2023-06-28T13:54:51.901Z",
+    "duration": 56,
     "testsRegistered": 8,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6c4f4964-fa50-47a0-967b-885da011521c",
+      "uuid": "fb1ae33f-26d8-41fd-9564-cf0a9d9bdbd4",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "398351f9-59e4-4c29-969b-632f065a1f2d",
+          "uuid": "be7c0ba9-96cd-4a02-aa23-063fdeb1b455",
           "title": "Animal Model",
           "fullFile": "/Users/efrancis/Documents/AFL-Assessment/src/tests/unit-tests/animal.spec.ts",
           "file": "/src/tests/unit-tests/animal.spec.ts",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "b6a6b429-384a-4ee0-b029-c0b2bc8a152b",
+              "uuid": "74d64ea3-1139-45f1-95fc-9673edcbac8f",
               "title": "Cat",
               "fullFile": "/Users/efrancis/Documents/AFL-Assessment/src/tests/unit-tests/animal.spec.ts",
               "file": "/src/tests/unit-tests/animal.spec.ts",
@@ -47,7 +47,7 @@
                   "title": "should make Meow sound",
                   "fullTitle": "Animal Model Cat should make Meow sound",
                   "timedOut": false,
-                  "duration": 6,
+                  "duration": 7,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -56,26 +56,26 @@
                   "context": null,
                   "code": "const cat = new cat_1.Cat();\nconst consoleLogStub = sinon_1.default.stub(console, \"log\");\ncat.sound();\nchai_1.assert.strictEqual(consoleLogStub.calledWith(\"A cat makes Meow sound\"), true);\nconsoleLogStub.restore();",
                   "err": {},
-                  "uuid": "f78e3727-9918-43f4-9308-5843f7aefb68",
-                  "parentUUID": "b6a6b429-384a-4ee0-b029-c0b2bc8a152b",
+                  "uuid": "7bfd0b02-a41a-4cb1-8623-def707d4882b",
+                  "parentUUID": "74d64ea3-1139-45f1-95fc-9673edcbac8f",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "f78e3727-9918-43f4-9308-5843f7aefb68"
+                "7bfd0b02-a41a-4cb1-8623-def707d4882b"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 6,
+              "duration": 7,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "edfe884d-ecfd-41a6-828a-f6627b54bd47",
+              "uuid": "4165f812-0676-4190-aed7-1db08aeac8fe",
               "title": "Dog",
               "fullFile": "/Users/efrancis/Documents/AFL-Assessment/src/tests/unit-tests/animal.spec.ts",
               "file": "/src/tests/unit-tests/animal.spec.ts",
@@ -95,15 +95,15 @@
                   "context": null,
                   "code": "const dog = new dog_1.Dog();\nconst consoleLogStub = sinon_1.default.stub(console, \"log\");\ndog.sound();\nchai_1.assert.strictEqual(consoleLogStub.calledWith(\"A dog barks Woof! Woof!!\"), true);\nconsoleLogStub.restore();",
                   "err": {},
-                  "uuid": "6ae52229-c6e2-4e74-8437-88fb644ff2cb",
-                  "parentUUID": "edfe884d-ecfd-41a6-828a-f6627b54bd47",
+                  "uuid": "f5077fae-d30b-447b-b49b-3401262711b0",
+                  "parentUUID": "4165f812-0676-4190-aed7-1db08aeac8fe",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "6ae52229-c6e2-4e74-8437-88fb644ff2cb"
+                "f5077fae-d30b-447b-b49b-3401262711b0"
               ],
               "failures": [],
               "pending": [],
@@ -124,7 +124,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "e1ff1f67-15fd-42a9-b6b3-9e6b9712045b",
+          "uuid": "7e5a7b0f-197b-4478-a206-6c75f6463be1",
           "title": "Calculations",
           "fullFile": "/Users/efrancis/Documents/AFL-Assessment/src/tests/unit-tests/number-utils.spec.ts",
           "file": "/src/tests/unit-tests/number-utils.spec.ts",
@@ -144,8 +144,8 @@
               "context": null,
               "code": "chai_1.assert.equal((0, number_utils_1.calculatePower)(2, 3), 8);\nchai_1.assert.equal((0, number_utils_1.calculatePower)(5, 0), 1);",
               "err": {},
-              "uuid": "6dfb2cdd-d299-4b80-b3ab-8d43dac603ad",
-              "parentUUID": "e1ff1f67-15fd-42a9-b6b3-9e6b9712045b",
+              "uuid": "f3a3a3f3-c76b-4287-83e4-9c370977bbe7",
+              "parentUUID": "7e5a7b0f-197b-4478-a206-6c75f6463be1",
               "isHook": false,
               "skipped": false
             },
@@ -162,16 +162,16 @@
               "context": null,
               "code": "chai_1.assert.equal((0, number_utils_1.calculateSimpleInterest)(1000, 5, 2), 100);\nchai_1.assert.equal((0, number_utils_1.calculateSimpleInterest)(5000, 10, 3), 1500);",
               "err": {},
-              "uuid": "a2c3f4a6-4b0c-4b33-8522-4e04abc42e4a",
-              "parentUUID": "e1ff1f67-15fd-42a9-b6b3-9e6b9712045b",
+              "uuid": "a7a09f04-5e6d-4251-b84f-72182d9ff450",
+              "parentUUID": "7e5a7b0f-197b-4478-a206-6c75f6463be1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6dfb2cdd-d299-4b80-b3ab-8d43dac603ad",
-            "a2c3f4a6-4b0c-4b33-8522-4e04abc42e4a"
+            "f3a3a3f3-c76b-4287-83e4-9c370977bbe7",
+            "a7a09f04-5e6d-4251-b84f-72182d9ff450"
           ],
           "failures": [],
           "pending": [],
@@ -182,7 +182,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "0e754c04-2770-4edf-8405-fb76a699f9d7",
+          "uuid": "04fb475b-1972-48a5-b53d-77c6237feda4",
           "title": "String Manipulations",
           "fullFile": "/Users/efrancis/Documents/AFL-Assessment/src/tests/unit-tests/string-utils.spec.ts",
           "file": "/src/tests/unit-tests/string-utils.spec.ts",
@@ -202,8 +202,8 @@
               "context": null,
               "code": "const word = \"racecar\";\nconst result = (0, string_utils_1.isPalindrome)(word);\nchai_1.assert.isTrue(result, `${word} should be a palindrome`);",
               "err": {},
-              "uuid": "5a8feaf1-af40-404c-b1ff-e3fb4e4a7d5d",
-              "parentUUID": "0e754c04-2770-4edf-8405-fb76a699f9d7",
+              "uuid": "381c0b4d-8ca1-4896-9bfe-e69ce3317c30",
+              "parentUUID": "04fb475b-1972-48a5-b53d-77c6237feda4",
               "isHook": false,
               "skipped": false
             },
@@ -211,7 +211,7 @@
               "title": "should return false if the word is not a palindrome",
               "fullTitle": "String Manipulations should return false if the word is not a palindrome",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -220,8 +220,8 @@
               "context": null,
               "code": "const word = \"hello\";\nconst result = (0, string_utils_1.isPalindrome)(word);\nchai_1.assert.isFalse(result, `${word} should not be a palindrome`);",
               "err": {},
-              "uuid": "5bcab5e6-8969-4446-8ce1-2d8ba1844a26",
-              "parentUUID": "0e754c04-2770-4edf-8405-fb76a699f9d7",
+              "uuid": "9aace188-83c5-48ee-83a1-0720f621e60c",
+              "parentUUID": "04fb475b-1972-48a5-b53d-77c6237feda4",
               "isHook": false,
               "skipped": false
             },
@@ -229,7 +229,7 @@
               "title": "should convert the string to uppercase",
               "fullTitle": "String Manipulations should convert the string to uppercase",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -238,8 +238,8 @@
               "context": null,
               "code": "const input = \"changing the world!\";\nconst expectedOutput = \"CHANGING THE WORLD!\";\nconst result = (0, string_utils_1.convertStringToUpperCase)(input);\n(0, chai_1.expect)(result).to.equal(expectedOutput);",
               "err": {},
-              "uuid": "74f3a5d1-4153-40f9-8c2c-405e1f38a8ed",
-              "parentUUID": "0e754c04-2770-4edf-8405-fb76a699f9d7",
+              "uuid": "26382c53-cc55-4104-86e3-4edfc318a65a",
+              "parentUUID": "04fb475b-1972-48a5-b53d-77c6237feda4",
               "isHook": false,
               "skipped": false
             },
@@ -256,23 +256,23 @@
               "context": null,
               "code": "const input = \"cHaNgInG tHe WoRlD!\";\nconst expectedOutput = \"Changing the world!\";\nconst result = (0, string_utils_1.convertStringToSentenceCase)(input);\n(0, chai_1.expect)(result).to.equal(expectedOutput);",
               "err": {},
-              "uuid": "dda2b01b-d024-4752-b1e1-00de7359a603",
-              "parentUUID": "0e754c04-2770-4edf-8405-fb76a699f9d7",
+              "uuid": "4749f92e-699a-4944-8489-b964b01297ca",
+              "parentUUID": "04fb475b-1972-48a5-b53d-77c6237feda4",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5a8feaf1-af40-404c-b1ff-e3fb4e4a7d5d",
-            "5bcab5e6-8969-4446-8ce1-2d8ba1844a26",
-            "74f3a5d1-4153-40f9-8c2c-405e1f38a8ed",
-            "dda2b01b-d024-4752-b1e1-00de7359a603"
+            "381c0b4d-8ca1-4896-9bfe-e69ce3317c30",
+            "9aace188-83c5-48ee-83a1-0720f621e60c",
+            "26382c53-cc55-4104-86e3-4edfc318a65a",
+            "4749f92e-699a-4944-8489-b964b01297ca"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2,
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
