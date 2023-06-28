@@ -1,8 +1,3 @@
-export function removeRepeatedCharacters(str: string): string {
-  const uniqueChars = [...new Set(str)];
-  return uniqueChars.join("");
-}
-
 export function calculatePower(base: number, exponent: number): number {
   return Math.pow(base, exponent);
 }
