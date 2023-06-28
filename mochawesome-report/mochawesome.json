@@ -1,0 +1,312 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-06-28T12:28:18.654Z",
+    "end": "2023-06-28T12:28:18.687Z",
+    "duration": 33,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6c4f4964-fa50-47a0-967b-885da011521c",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "398351f9-59e4-4c29-969b-632f065a1f2d",
+          "title": "Animal Model",
+          "fullFile": "/Users/efrancis/Documents/AFL-Assessment/src/tests/unit-tests/animal.spec.ts",
+          "file": "/src/tests/unit-tests/animal.spec.ts",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "b6a6b429-384a-4ee0-b029-c0b2bc8a152b",
+              "title": "Cat",
+              "fullFile": "/Users/efrancis/Documents/AFL-Assessment/src/tests/unit-tests/animal.spec.ts",
+              "file": "/src/tests/unit-tests/animal.spec.ts",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should make Meow sound",
+                  "fullTitle": "Animal Model Cat should make Meow sound",
+                  "timedOut": false,
+                  "duration": 6,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const cat = new cat_1.Cat();\nconst consoleLogStub = sinon_1.default.stub(console, \"log\");\ncat.sound();\nchai_1.assert.strictEqual(consoleLogStub.calledWith(\"A cat makes Meow sound\"), true);\nconsoleLogStub.restore();",
+                  "err": {},
+                  "uuid": "f78e3727-9918-43f4-9308-5843f7aefb68",
+                  "parentUUID": "b6a6b429-384a-4ee0-b029-c0b2bc8a152b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "f78e3727-9918-43f4-9308-5843f7aefb68"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 6,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "edfe884d-ecfd-41a6-828a-f6627b54bd47",
+              "title": "Dog",
+              "fullFile": "/Users/efrancis/Documents/AFL-Assessment/src/tests/unit-tests/animal.spec.ts",
+              "file": "/src/tests/unit-tests/animal.spec.ts",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should bark Woof",
+                  "fullTitle": "Animal Model Dog should bark Woof",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const dog = new dog_1.Dog();\nconst consoleLogStub = sinon_1.default.stub(console, \"log\");\ndog.sound();\nchai_1.assert.strictEqual(consoleLogStub.calledWith(\"A dog barks Woof! Woof!!\"), true);\nconsoleLogStub.restore();",
+                  "err": {},
+                  "uuid": "6ae52229-c6e2-4e74-8437-88fb644ff2cb",
+                  "parentUUID": "edfe884d-ecfd-41a6-828a-f6627b54bd47",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "6ae52229-c6e2-4e74-8437-88fb644ff2cb"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e1ff1f67-15fd-42a9-b6b3-9e6b9712045b",
+          "title": "Calculations",
+          "fullFile": "/Users/efrancis/Documents/AFL-Assessment/src/tests/unit-tests/number-utils.spec.ts",
+          "file": "/src/tests/unit-tests/number-utils.spec.ts",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should calculate the power of a number",
+              "fullTitle": "Calculations should calculate the power of a number",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "chai_1.assert.equal((0, number_utils_1.calculatePower)(2, 3), 8);\nchai_1.assert.equal((0, number_utils_1.calculatePower)(5, 0), 1);",
+              "err": {},
+              "uuid": "6dfb2cdd-d299-4b80-b3ab-8d43dac603ad",
+              "parentUUID": "e1ff1f67-15fd-42a9-b6b3-9e6b9712045b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should calculate the simple interest",
+              "fullTitle": "Calculations should calculate the simple interest",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "chai_1.assert.equal((0, number_utils_1.calculateSimpleInterest)(1000, 5, 2), 100);\nchai_1.assert.equal((0, number_utils_1.calculateSimpleInterest)(5000, 10, 3), 1500);",
+              "err": {},
+              "uuid": "a2c3f4a6-4b0c-4b33-8522-4e04abc42e4a",
+              "parentUUID": "e1ff1f67-15fd-42a9-b6b3-9e6b9712045b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6dfb2cdd-d299-4b80-b3ab-8d43dac603ad",
+            "a2c3f4a6-4b0c-4b33-8522-4e04abc42e4a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "0e754c04-2770-4edf-8405-fb76a699f9d7",
+          "title": "String Manipulations",
+          "fullFile": "/Users/efrancis/Documents/AFL-Assessment/src/tests/unit-tests/string-utils.spec.ts",
+          "file": "/src/tests/unit-tests/string-utils.spec.ts",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return true if the word is a palindrome",
+              "fullTitle": "String Manipulations should return true if the word is a palindrome",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const word = \"racecar\";\nconst result = (0, string_utils_1.isPalindrome)(word);\nchai_1.assert.isTrue(result, `${word} should be a palindrome`);",
+              "err": {},
+              "uuid": "5a8feaf1-af40-404c-b1ff-e3fb4e4a7d5d",
+              "parentUUID": "0e754c04-2770-4edf-8405-fb76a699f9d7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return false if the word is not a palindrome",
+              "fullTitle": "String Manipulations should return false if the word is not a palindrome",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const word = \"hello\";\nconst result = (0, string_utils_1.isPalindrome)(word);\nchai_1.assert.isFalse(result, `${word} should not be a palindrome`);",
+              "err": {},
+              "uuid": "5bcab5e6-8969-4446-8ce1-2d8ba1844a26",
+              "parentUUID": "0e754c04-2770-4edf-8405-fb76a699f9d7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should convert the string to uppercase",
+              "fullTitle": "String Manipulations should convert the string to uppercase",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const input = \"changing the world!\";\nconst expectedOutput = \"CHANGING THE WORLD!\";\nconst result = (0, string_utils_1.convertStringToUpperCase)(input);\n(0, chai_1.expect)(result).to.equal(expectedOutput);",
+              "err": {},
+              "uuid": "74f3a5d1-4153-40f9-8c2c-405e1f38a8ed",
+              "parentUUID": "0e754c04-2770-4edf-8405-fb76a699f9d7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should convert the string to sentence case",
+              "fullTitle": "String Manipulations should convert the string to sentence case",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const input = \"cHaNgInG tHe WoRlD!\";\nconst expectedOutput = \"Changing the world!\";\nconst result = (0, string_utils_1.convertStringToSentenceCase)(input);\n(0, chai_1.expect)(result).to.equal(expectedOutput);",
+              "err": {},
+              "uuid": "dda2b01b-d024-4752-b1e1-00de7359a603",
+              "parentUUID": "0e754c04-2770-4edf-8405-fb76a699f9d7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5a8feaf1-af40-404c-b1ff-e3fb4e4a7d5d",
+            "5bcab5e6-8969-4446-8ce1-2d8ba1844a26",
+            "74f3a5d1-4153-40f9-8c2c-405e1f38a8ed",
+            "dda2b01b-d024-4752-b1e1-00de7359a603"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
