@@ -1,6 +1,14 @@
 export function isPalindrome(str: string): boolean {
   const reversed = str.split("").reverse().join("");
-  return str === reversed;
+  const isPalindrome = str === reversed;
+
+  if (isPalindrome) {
+    console.log(`${str} is a palindrome.`);
+  } else {
+    console.log(`${str} is not a palindrome.`);
+  }
+
+  return isPalindrome;
 }
 
 export function removeRepeatedCharacters(chars: string): string {

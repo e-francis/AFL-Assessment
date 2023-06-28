@@ -35,8 +35,7 @@ const interest = calculateSimpleInterest(principal, rate, time);
 console.log(`The interest is: ${interest}%`);
 
 // Checking if a string is a palindrome
-const palindromeString = "stats";
-console.log(`"${palindromeString}" is a palindrome`);
+isPalindrome("stats");
 
 // Removing repeated characters from a string
 const inputString1 = "Hello";
